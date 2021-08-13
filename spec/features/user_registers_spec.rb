@@ -14,6 +14,8 @@ feature "User registers" do
     # Using find because fill_in 'password' would raise an Ambigous error
     find("#user_password").set("password")
     fill_in "Password confirmation", with: "password"
+    fill_in "First name", with: "Nicolas"
+    fill_in "Last name", with: "Proto"
     click_button "Sign up"
 
     expect(current_path).to eq "/"
