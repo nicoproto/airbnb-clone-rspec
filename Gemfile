@@ -33,6 +33,10 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'devise'
 gem 'pundit'
+gem "sentry-ruby"
+gem "sentry-rails"
+
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
