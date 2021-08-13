@@ -4,6 +4,7 @@ describe Dog, type: :model do
   context 'validations' do
     it { should validate_presence_of :name }
     it { should validate_presence_of :location }
+    it { should validate_inclusion_of(:breed).in_array(Dog::BREEDS) }
 
     it { should validate_presence_of :price }
     it { should validate_numericality_of(:price).is_greater_than(0) }
