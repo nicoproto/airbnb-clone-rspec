@@ -44,7 +44,6 @@ group :development, :test do
   # Testing Suite
   gem 'rspec-rails'
   gem 'database_cleaner-active_record'
-  gem 'shoulda-matchers'
   gem 'factory_bot_rails'
   gem 'timecop'
   gem 'simplecov'
@@ -52,6 +51,8 @@ group :development, :test do
   gem 'capybara-screenshot'
   gem 'selenium-webdriver'
   gem "webdrivers"
+  gem 'shoulda-matchers'
+  gem 'pundit-matchers', '~> 1.7.0'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
