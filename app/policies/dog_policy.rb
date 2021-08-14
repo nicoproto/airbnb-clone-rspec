@@ -6,15 +6,15 @@ class DogPolicy < ApplicationPolicy
   end
 
   def index?
-    true
+    user != nil
   end
 
   def create?
-    true
+    user != nil
   end
 
   def show?
-    true
+    user != nil
   end
 
   def update?
